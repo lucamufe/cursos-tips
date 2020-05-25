@@ -136,13 +136,15 @@
 
   .tarjeta{
     width: 400px;
-    height: 100px;
+    height: 150px;
     margin: auto;
     margin-top: 50px;
     padding: 20px;
     text-align: center;
     justify-content: center;
-    background-color: rgb(158, 153, 153);
-    color: white;
+    /*background-color: rgb(158, 153, 153);*/
+    background-color: rgb(202, 195, 218);
+    background-image: linear-gradient(to bottom right,rgb(79, 103, 146), white);
+    color: black
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
   }
