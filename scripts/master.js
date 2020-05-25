@@ -1,28 +1,25 @@
 $(function(){
-    agregarMenu();
+    agregarHeader();
     agregarFooter();
 });
 
-function agregarMenu(){
-    var menu = document.getElementById("menu");
+function agregarHeader(){
+    var menu = document.getElementById("header");
     menu.innerHTML = 
-    '<div class="Sup">'+
-        '<div class="Logo">'+
-            '<img src="../../imagenes/Logo1.PNG" alt="Cursos y Tips" width="80" height="50" class="imgLogo">'+
-        '</div>'+
-        '<div class="Nave">'+
-            '<ul class="VerNav">'+
-                '<li style="float:right"><a href="#">Contacto</a></li>'+
-                '<li style="float:right"><a href="#">Python</a></li>'+
-                '<li style="float:right"><a href="#">Power BI</a></li>'+
-                '<li style="float:right"><a href="./temas/excel/excel.html">Excel</a></li>'+
-                '<li style="float:right"><a href="/">Home</a></li>'+
-            '</ul>'+
-        '</div>'+
-    '</div>'
+        '<nav>'+
+        '<ul>'+
+          '<li class="logo"><a href="/"><img src="/imagenes/Logo1.PNG" alt="Cursos y Tips" width="80" height="47"'+ 'class="imgLogo"></a></i>'+
+          '<li><a href="/">Excel</a></li>'+
+          '<li><a href="/temas/powerbi/powerbi.html">PowerBI</a></li>'+
+          '<li><a href="/temas/python/python.html">Python</a></li>'+
+        '</ul>'+
+      '</nav>'+
+      '<button><a href="/temas/contacto/contacto.html">Contacto</a></button>'
 }
 
 function agregarFooter(){
     var footer = document.getElementById("footer");
-    footer.innerHTML = 'Cursos y Tips<br>2020';
+    footer.innerHTML = 
+        '<h4>Cursos y Tips</h4>'+
+        '<p>Si no encuentra el tema que está buscando, solicitarlo a través de la sección <a href="/temas/contacto/contacto.html">CONTACTO</a>.</p>'
 }
