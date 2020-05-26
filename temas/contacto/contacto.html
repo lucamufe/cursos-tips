@@ -18,18 +18,33 @@
     
         <div class="wrapper">
             <aside class="sidebar">
-                <h3>PYTHON</h3>
+                <h3>CONTACTO</h3>
                 <ul>
+                    <!---
                     <li><a href="#leerCsv">Leer archivo csv</a></li>
-                    
+                    -->
                     
                 </ul>
             </aside>
             <section class="main">
-                <h2 id="leerCsv">Leer archivo csv</h2>
-                <iframe src="https://www.youtube.com/embed/zACTpV7WoKg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p>El video muestra como leer un archivo CSV (texto separado por coma) usando Python.</p>
+                <h2 id="leerCsv">Preguntas y Comentarios</h2>
+                
+                <p>Envíenos sus preguntas o comentarios, también si desea que incluyamos un tema de su interés lo puede solicitar por aquí.</p>
 
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                      <label>Nombre:<br> <input type="text" name="name" /></label>   
+                    </p>
+                    <p>
+                      <label>Email:<br> <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                      <label>Mensaje:<br> <textarea name="message" style="width:400px; height:100px;"></textarea></label>
+                    </p>
+                    <p>
+                      <button type="submit">Enviar</button>
+                    </p>
+                </form>
                 
             </section>
         </div>
